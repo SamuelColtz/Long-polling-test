@@ -1,0 +1,89 @@
+@keyframes move {
+  from {
+    margin-left: 1000px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto';
+  background-color: #EFEFEF;
+}
+
+.global {
+  display: flex;
+}
+
+.friends {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 25%;
+  height: 100vh;
+}
+
+.chat {
+  margin-left: 0px;
+  width: 75%;
+}
+
+.chat .registry {
+  background-color: #EFEFEF;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 97%;
+}
+
+.chat .registry input {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: 'Roboto';
+  font-size: 1.3em;
+  font-weight: bolder;
+  margin: 0px 0;
+  height: 30px;
+  width: 100%;
+  display: block;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.chat .registry button {
+  font-family: 'Roboto';
+  font-size: 1.3em;
+  width: 5%;
+  height: 32px;
+  border: 0;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.chat .registry button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.chat .message {
+  width: 97%;
+  margin: 10px auto;
+  height: 400px;
+  background-color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chat .message p {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 1.5em;
+  margin: 10px;
+  padding: 20px;
+  animation: move .4s;
+}
