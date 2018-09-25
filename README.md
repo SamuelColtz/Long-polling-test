@@ -1,6 +1,11 @@
 # Long-polling-test
 
-``` $ npm install # or npm i ```   
-``` $ node server.js ```
+### Installation
 
-### and now your server is now available at http://localhost:8000/
+```bash 
+ $ npm install # or npm i
+ 
+ $ node server.js
+ #server listening on port 8000 
+
+``` 
