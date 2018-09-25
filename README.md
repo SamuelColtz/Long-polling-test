@@ -3,7 +3,7 @@
 
 ### download the dependencies
 
-``` python $ npm install #or npm i ```   
+```$ npm install # or npm i ```   
 
 ### run server 
 
